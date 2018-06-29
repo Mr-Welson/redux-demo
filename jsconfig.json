@@ -1,0 +1,7 @@
+// vscode的支持修饰符
+{
+  "compilerOptions": {
+    "experimentalDecorators": true
+  },
+  "tabSize": 2,
+}

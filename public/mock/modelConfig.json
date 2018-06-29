@@ -1,0 +1,49 @@
+{
+  "code": "200",
+  "message": "Successful",
+  "data": [{
+    "id": 101,
+    "isDef": null,
+    "isShow": 1,
+    "userId": "5d575e61-a511-4599-bced-5e6ebf212880",
+    "params": [
+      {
+        "name":"云眼报警",
+        "model":"monitor",
+        "openStatus":"1"
+      },
+      {
+        "name":"云眼图库",
+        "model":"baselib",
+        "openStatus":"1"
+      },
+      {
+        "name":"云眼研判",
+        "model":"judge",
+        "openStatus":"1"
+      },
+      {
+        "name":"云眼监控",
+        "model":"pvm",
+        "openStatus":"1"
+      },
+      {
+        "name":"云眼统计",
+        "model":"charts",
+        "openStatus":"1"
+      },
+      {
+        "name":"管理中心",
+        "model":"settings",
+        "openStatus":"1",
+        "children":[
+          {"name":"人员布控","model":"taskmgr","openStatus":"1","classIcon":"icon-task"},
+          {"name":"黑名单管理","model":"librarymgr","openStatus":"1","classIcon":"icon-lib"},
+          {"name":"设备管理","model":"devicemgr","openStatus":"1","classIcon":"icon-device"},
+          {"name":"系统日志","model":"handleLogmgr","openStatus":"1","classIcon":"icon-syslog"},
+          {"name":"功能配置","model":"functionConfig","openStatus":"1","classIcon":"icon-function"}
+        ]
+      },
+    ],
+  }]
+}
