@@ -1,0 +1,9 @@
+.wrapper{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  border: 1px solid red;
+  .content{
+    flex: 1;
+  }
+}

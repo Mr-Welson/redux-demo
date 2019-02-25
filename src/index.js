@@ -2,6 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { combineReducers,createStore } from 'redux';
 import { Provider, connect } from 'react-redux';
+import './index.scss';
+
+// Redux
+// 1. Web 应用是一个状态机，视图与状态是一一对应的。
+// 2. 所有的状态，保存在一个对象里面。
+// 处理共享状态
 
 // Redux工作流
 // 只有一个单一的 store 和一个根级的 reduce 函数
@@ -11,7 +17,6 @@ import { Provider, connect } from 'react-redux';
 // => container dispatch一个action
 // => action 触发 reducer
 // => reducer 更新 state
-
 
 /**
  * constants
@@ -36,7 +41,6 @@ const addTodo = (text) => {
   }
 }
 
-
 /**
  * reducer
  * 形式为 (state, action) => state 的纯函数，决定每个 action 如何改变应用的 state
@@ -55,7 +59,6 @@ const todos = (state, action) => {
 	}
 }
 const todoApp = combineReducers({todos})
-
 
 /**
  * 展示组件 components
@@ -76,10 +79,13 @@ const AddTodoView = ({onSubmit, text}) => {
           <button type='htmlSubmit'>add todo</button>
           <span>{text}</span>
       </form>
+      <div className='wrapper'>
+        <div className='content'>111</div>
+        <div className='content'>222</div>
+      </div> 
   </div>
   )
 }
-
 
 /**
  * 容器组件 containers
