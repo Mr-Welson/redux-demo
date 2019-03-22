@@ -9,6 +9,7 @@
     "build": "node webpack/build.js"
   },
   "dependencies": {
+    "antd": "^3.13.6",
     "js-cookie": "2.1.4",
     "lodash": "^4.17.5",
     "moment": "^2.21.0",
@@ -20,7 +21,6 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
-    "antd": "3.3.1",
     "autoprefixer": "^7.2.4",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",
@@ -61,7 +61,7 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-bundle-analyzer": "^2.9.1",
-    "webpack-dev-server": "^2.9.7",
+    "webpack-dev-server": "3.0.0",
     "webpack-jarvis": "^0.2.2",
     "webpack-merge": "^4.1.1",
     "webpack-notifier": "^1.6.0"
