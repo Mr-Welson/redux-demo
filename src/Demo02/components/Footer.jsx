@@ -7,15 +7,15 @@ const Footer = () => {
 			Show:
 			{' '}
 			<FilterLink filter='SHOW_ALL'>
-				ALL
+				全部
 			</FilterLink>
 			{', '}
 			<FilterLink filter='SHOW_ACTIVE'>
-				ACTIVE
+				未完成
 			</FilterLink>
 			{', '}
 			<FilterLink filter='SHOW_COMPLETED'>
-				COMPLETED
+				已完成
 			</FilterLink>
 		</p>
 	)

@@ -1,5 +1,6 @@
 let nextTodoId = 0;
 
+// actionCreators
 export const addTodo = (text) => {
     nextTodoId++;
     return {
@@ -16,9 +17,9 @@ export const setVisibility = (filter) => {
     }
 }
 
-export const toggleTodo = (id) => {
+export const setComplete = (id) => {
     return {
-        type: 'TOGGLE_TODO',
+        type: 'SET_COMPLETE',
         id
     }
 }

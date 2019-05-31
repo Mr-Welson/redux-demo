@@ -43,12 +43,6 @@ const devServerOptions = {
     '/service/*': {
       target: 'http://127.0.0.1:8891' //代理服务器地址
     },
-    '/vdt/*': {
-      target: 'http://127.0.0.1:8891'
-    },
-    '/vdtimg/*': {
-      target: 'http://127.0.0.1:8891'
-    },
     // '/mock/*': {
     //   target: 'http://127.0.0.1:8890/mock/'
     // },

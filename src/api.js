@@ -106,7 +106,14 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   console.log('--- container mapDispatchToProps ---')    
 	return {
 		onSubmit(text){
-      dispatch(addTodo(text))
+      // 2种方式 dispatch 一个 action:
+      // 1. 内联action
+      dispatch({
+        type: ActionTypes.ADD_TODO,
+        text
+      })
+      // 2. 使用 actionCreator
+      // dispatch(addTodo(text))
 		}
 	}
 }

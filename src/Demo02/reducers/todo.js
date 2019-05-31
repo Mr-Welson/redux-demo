@@ -1,34 +1,25 @@
-const todo = (state, action) => {
-	switch (action.type) {
-		case 'ADD_TODO':
-			return {
-				id: action.id,
-				text: action.text,
-				complete: false
-			}
-		case 'TOGGLE_TODO':
-			if(state.id !== action.id){
-				return state
-			}
-			return Object.assign({}, state, {
-				complete: !state.complete
-			})
-		default: 
-			return state
-	}
-}
 
-const todos = (state, action) => {
+const todos = (state = [], action) => {
 	switch(action.type){
 		case 'ADD_TODO':
 			return [
 				...state,
-				todo(undefined, action)
+				{
+          id: action.id,
+          text: action.text,
+          complete: false
+        }
 			]
-		case 'TOGGLE_TODO':
-			return state.map(v => todo(v, action))
+    case 'SET_COMPLETE':
+      const newState = state.map(v => {
+        if(v.id === action.id) {
+          v.complete = !v.complete;
+        }
+        return v
+      })
+			return newState;
 		default:
-			return state === undefined ? [] : state
+			return state
 	}
 }
 
