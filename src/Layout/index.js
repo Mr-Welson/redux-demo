@@ -19,7 +19,7 @@ class LayoutContainer extends Component {
           >
             <MenuItem key='/demo01'><Link to='/demo01'> Counter </Link></MenuItem>
             <MenuItem key='/demo02'><Link to='/demo02'> TodoList </Link></MenuItem>
-            <MenuItem key='/demo03'><Link to='/demo03'> Async </Link></MenuItem>
+            <MenuItem key='/demo03'><Link to='/demo03'> Middleware </Link></MenuItem>
           </Menu>
         </Header>
         <Content>

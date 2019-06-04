@@ -1,12 +1,19 @@
-import React, { Component } from 'react';
-import { Provider, connect } from 'react-redux';
+import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-class View extends Component {
-  render() {
-    return (
-      <div>333</div>
-    )
-  }
-}
+import rootReducers from './reducers';
 
-export default View;
+import App from './components/App';
+
+const initStore = {}
+
+const store = createStore(rootReducers, initStore)
+
+const MiddleWareDemo = () => (
+  <Provider store={store}> 
+    <App />
+  </Provider>
+) 
+
+export default MiddleWareDemo;

@@ -14,11 +14,11 @@ const Calculator = ({ number, handleAdd, handleMinus, handleRandom }) => (
         <Button type="primary" ghost icon='minus-circle' onClick={handleMinus}></Button>
       </Tooltip>,
       <Tooltip title='随机'>
-        <Button type="primary" ghost icon='close-circle' onClick={handleRandom}></Button>
+        <Button type="primary" ghost icon='reload' onClick={handleRandom}></Button>
       </Tooltip>
     ]}
   >
-    <Statistic title="Redux最简应用" value={number} />
+    <Statistic title="Redux最简应用-计数器" value={number} />
   </Card>
 )
 

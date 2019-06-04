@@ -18,13 +18,14 @@ import './index.scss';
 // => container dispatch一个action
 // => action 触发 reducer
 // => reducer 更新 state
+// => 页面响应
 
 /**
  * constants
  * 常量
  */
 const ActionTypes = {
-  ADD_TODO: 'ADD_TODO'
+  ADD_TODO : 'ADD_TODO'
 }
 
 /**
@@ -51,7 +52,7 @@ const addTodo = (text) => {
 const todos = (state, action) => {
   console.log('--- reducer ---')
 	switch(action.type){
-		case ActionTypes.ADD_TODO:
+		case ActionTypes.ADD_TODO :
       return Object.assign({}, state, {
         text: action.text
       })
@@ -127,9 +128,10 @@ const AddTodoContainer = connect(
 /**
  * store
  * 每个应用只有一个单一的 store
- * 接收2个参数
+ * 接收3个参数
  * params1：reducer
  * params2：初始state
+ * params3：middlewares
  */
 let store = createStore(todoApp, {
   todos:{

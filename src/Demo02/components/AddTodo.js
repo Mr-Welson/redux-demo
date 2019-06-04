@@ -15,7 +15,6 @@ class AddTodo extends Component {
   }
 
   handleAdd = () => {
-    console.log(this);
     const { text } = this.state;
     const { handleAdd } = this.props;
     if(text.trim()) {
