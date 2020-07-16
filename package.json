@@ -11,7 +11,7 @@
   "dependencies": {
     "antd": "^3.13.6",
     "js-cookie": "2.1.4",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.19",
     "moment": "^2.21.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
